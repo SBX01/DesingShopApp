@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/DesingShopApp/static/css/main.292fad39.css",
+    "main.js": "/DesingShopApp/static/js/main.c353e150.js",
+    "static/js/787.387c51a3.chunk.js": "/DesingShopApp/static/js/787.387c51a3.chunk.js",
+    "index.html": "/DesingShopApp/index.html",
+    "main.292fad39.css.map": "/DesingShopApp/static/css/main.292fad39.css.map",
+    "main.c353e150.js.map": "/DesingShopApp/static/js/main.c353e150.js.map",
+    "787.387c51a3.chunk.js.map": "/DesingShopApp/static/js/787.387c51a3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.292fad39.css",
+    "static/js/main.c353e150.js"
+  ]
+}
