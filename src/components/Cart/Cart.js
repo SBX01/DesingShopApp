@@ -18,7 +18,11 @@ class Cart extends Component{
                 <button className='cart' onClick={mostrarCarro}>
                         Carro
                 </button>
-                {esCarroVisible ? <CartDetail carro={carro}></CartDetail> : null}
+                {esCarroVisible ? 
+                <CartDetail 
+                carro={carro}
+                ></CartDetail> 
+                : null}
                  
             </div>
         )

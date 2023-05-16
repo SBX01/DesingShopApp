@@ -13,9 +13,9 @@ class App extends Component{
       { name:'Lechugas', price: 500, img:'https://static.libertyprim.com/files/familles/romaine-large.jpg?1569271844'},
     ],
     carro : [],
-    esCarroVisisble: false
+    esCarroVisisble: false,
+    Total:0
   }
-
   mostrarCarro = () =>{
     if(!this.state.carro.length){
       return
@@ -29,7 +29,8 @@ class App extends Component{
       const newCarro = carro.map(x => x.name === producto.name
       ? ({
         ...x,
-        cantidad: x.cantidad + 1
+        cantidad: x.cantidad + 1,
+        subtotal: x.price * (x.cantidad + 1),
       })
       : x)
       return this.setState({carro :newCarro})
@@ -38,18 +39,21 @@ class App extends Component{
       carro: this.state.carro.concat({
         ...producto,
         cantidad: 1,
+        subtotal: producto.price
       })
     })
   }
   render(){
     const { esCarroVisible } = this.state
+    console.log("el carro contiene ",this.state.carro);
     return(
       
       <div>
         <Navbar 
         carro={this.state.carro} 
         esCarroVisible={esCarroVisible} 
-        mostrarCarro={this.mostrarCarro}/>
+        mostrarCarro={this.mostrarCarro}
+        />
        <Layout>
         <Tittle></Tittle>
         <Productos 

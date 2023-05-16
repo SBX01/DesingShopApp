@@ -11,3 +11,12 @@
     background-color: #F1F6F9;
     color:#212A3E
 }
+
+.button-remove{
+    background-color:rgba(252, 74, 74, 0.9);
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -7,6 +7,9 @@
     width: 300px;
     right: 50px;
 }
+.cart-submit{
+    height: 32px;
+}
 
 .cart-list{
     margin: 0;
