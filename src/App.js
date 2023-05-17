@@ -43,9 +43,31 @@ class App extends Component{
       })
     })
   }
+
+  setTotal =(valor) =>{
+   this.setState({Total:valor})
+  }
+
+  removeItem = (producto) => {
+    const {carro} = this.state
+    
+      if(carro.find(x => x.name === producto.name && x.cantidad > 1)){
+          const newCarro = carro.map(x => x.name === producto.name
+          ? ({
+            ...x,
+            cantidad: x.cantidad - 1,
+            subtotal: x.price * (x.cantidad - 1),
+          })
+          : x)
+        return this.setState({carro :newCarro})}
+        else{
+          const newCarro = carro.filter(item => item !== producto)
+          return this.setState({carro :newCarro})
+        }
+}
+
   render(){
     const { esCarroVisible } = this.state
-    console.log("el carro contiene ",this.state.carro);
     return(
       
       <div>
@@ -53,6 +75,8 @@ class App extends Component{
         carro={this.state.carro} 
         esCarroVisible={esCarroVisible} 
         mostrarCarro={this.mostrarCarro}
+        removeItem={this.removeItem}
+        setTotal={this.setTotal}
         />
        <Layout>
         <Tittle></Tittle>

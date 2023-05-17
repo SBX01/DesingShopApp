@@ -5,7 +5,7 @@ import CartDetail from '../CartDetail/CartDetail'
 
 class Cart extends Component{
     render(){
-        const {carro,esCarroVisible, mostrarCarro } = this.props
+        const {carro,esCarroVisible, mostrarCarro ,removeItem,setTotal} = this.props
         const cantidad = carro.reduce((acc,el)=> acc + el.cantidad, 0)
         return(
             <div>
@@ -21,6 +21,8 @@ class Cart extends Component{
                 {esCarroVisible ? 
                 <CartDetail 
                 carro={carro}
+                removeItem={removeItem}
+                setTotal={setTotal}
                 ></CartDetail> 
                 : null}
                  

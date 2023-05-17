@@ -5,7 +5,7 @@ import Cart from '../Cart/Cart'
 
 class Navbar extends Component {
     render(){
-        const {carro, esCarroVisible, mostrarCarro } = this.props
+        const {carro, esCarroVisible, mostrarCarro,removeItem,setTotal} = this.props
         return(
             <nav className='navbar'>
                 <Logo/>
@@ -13,6 +13,8 @@ class Navbar extends Component {
                 carro={carro}
                 esCarroVisible={esCarroVisible}
                 mostrarCarro={mostrarCarro}
+                removeItem={removeItem}
+                setTotal={setTotal}
                 />
             </nav>
         )
