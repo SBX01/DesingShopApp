@@ -80,10 +80,13 @@ class App extends Component{
         />
        <Layout>
         <Tittle></Tittle>
+        <div className="container">
         <Productos 
           addCart={this.addToCart }
           productos={this.state.productos}
           />
+        </div>
+
        </Layout>
       </div>
     )

@@ -1,11 +1,32 @@
+
 .layout-view{
     background-color: #fff;
     color: #0a283e;
     align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
 }
 
 .container{
-    width: 1200px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
 }
+
+@media only screen and (min-width:600px){
+    .layout-view{
+        background-color: #fff;
+        color: #0a283e;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container{
+        display: block;
+        width: 1200px;
+        flex-wrap:nowrap;
+    }
+}
+
