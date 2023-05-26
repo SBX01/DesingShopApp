@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/DesingShopApp/static/css/main.2ddb698a.css",
-    "main.js": "/DesingShopApp/static/js/main.4facc45e.js",
+    "main.css": "/DesingShopApp/static/css/main.10111641.css",
+    "main.js": "/DesingShopApp/static/js/main.88f6f7e3.js",
     "static/js/787.387c51a3.chunk.js": "/DesingShopApp/static/js/787.387c51a3.chunk.js",
     "index.html": "/DesingShopApp/index.html",
-    "main.2ddb698a.css.map": "/DesingShopApp/static/css/main.2ddb698a.css.map",
-    "main.4facc45e.js.map": "/DesingShopApp/static/js/main.4facc45e.js.map",
+    "main.10111641.css.map": "/DesingShopApp/static/css/main.10111641.css.map",
+    "main.88f6f7e3.js.map": "/DesingShopApp/static/js/main.88f6f7e3.js.map",
     "787.387c51a3.chunk.js.map": "/DesingShopApp/static/js/787.387c51a3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ddb698a.css",
-    "static/js/main.4facc45e.js"
+    "static/css/main.10111641.css",
+    "static/js/main.88f6f7e3.js"
   ]
 }
